@@ -1,0 +1,28 @@
+{
+  "name": "storefront",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "ts-node ../../packages/server/index.ts",
+    "server:dev": "nodemon --exec ts-node ../../packages/server/index.ts",
+    "start": "concurrently -n \"server,frontend\" -c \"cyan,magenta\" \"npm run server:dev\" \"npm run dev\""
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.100.8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.2",
+    "concurrently": "^9.1.0",
+    "react-refresh": "^0.17.0",
+    "rollup": "^4.60.3",
+    "vite": "^5.4.10"
+  }
+}

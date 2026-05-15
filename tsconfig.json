@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+    "strict": false,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "rootDir": "."
+  },
+  "ts-node": {
+    "transpileOnly": true,
+    "swc": false
+  },
+  "include": [
+    "packages/**/*.ts",
+    "packages/**/*.js",
+    "infra/**/*.ts",
+    "tests/**/*.ts"
+  ],
+  "exclude": ["node_modules", "apps"]
+}
